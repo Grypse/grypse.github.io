@@ -10,11 +10,7 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: Grypse
 github_username:  Grypse
 
-defaults:
-  -
-    scope:
-      path:"blog"
-      type:"pages"
-
 # Build settings
 markdown: kramdown
+paginate: 5
+paginate_path: "/page:num"
