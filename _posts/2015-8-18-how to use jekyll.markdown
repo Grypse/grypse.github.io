@@ -11,7 +11,7 @@ Jekyll is a simple, blog-aware, static site generator. It takes a template direc
 
 #Quick-start guide
 For the impatient, here’s how to get a boilerplate Jekyll site up and running.
-{% highlight ruby %}
+{% highlight ruby linenos %}
   ~ $ gem install jekyll
   ~ $ jekyll new myblog
   ~ $ cd myblog
