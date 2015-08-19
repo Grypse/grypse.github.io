@@ -4,18 +4,20 @@
   {% include head.html %}
 
   <body class="left-sidebar">
-    <div class="wrapper">
-      <!--Content-->
-      <div id="content" class="mobileUI-main-content">
-        <div id="content-inner">
-          <!--post-->
-          {{content}}
+    <div class="page-content">
+      <div class="wrapper">
+        <!--Content-->
+        <div id="content" class="mobileUI-main-content">
+          <div id="content-inner">
+            <!--post-->
+            {{content}}
+          </div>
         </div>
+        <!--Sidebar-->
+        {% include sidebar.html%}
       </div>
-      <!--Sidebar-->
-      {% include sidebar.html%}
+      <div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
     </div>
-    <div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
   </body>
 
 </html>

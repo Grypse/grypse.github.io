@@ -1,22 +1,24 @@
 ---
 layout: default
 ---
-<article class="is-post is-post-excerpt">
-    <header>
-      <h2>{{page.title}}</h2>
-      <span class="byline">{{page.brief}}</span>
-    </header>
-    <div class="info">
-      <span class="date"><span class="month">{{page.date | date: "%b"}}</span> <span class="day">{{page.date | date: "%-d"}}</span><span class="year">,{{post.date | date:",%Y"}} </span></span>
-      <ul class="stats">
-        <li><a href="#" class="link-icon24 link-icon24-1">comment</a></li>
-        <li><a href="#" class="link-icon24 link-icon24-2">like</a></li>
-        <li><a target="_blank" href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));" class="link-icon24 link-icon24-3">tweet</a></li>
-        <li><a target="_blank" href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));" class="link-icon24 link-icon24-4">share</a></li>
-      </ul>
-    </div>
-    <a href="#" class="image image-full"><img src="{{page.image}}" alt="" /></a>
-    <p>
-      {{page.content}}
-    </p>
-</article>
+
+<article class="post is-post">
+
+  <header class="post-header">
+    <h2 class="post-title">{{ page.title }}</h2>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+  <div class="info">
+    <span class="date"><span class="month">{{page.date | date: "%b"}}</span> <span class="day">{{page.date | date: "%-d"}}</span><span class="year">,{{post.date | date:",%Y"}} </span></span>
+    <ul class="stats">
+      <li><a href="#" class="link-icon24 link-icon24-1">comment</a></li>
+      <li><a href="#" class="link-icon24 link-icon24-2">like</a></li>
+      <li><a target="_blank" href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));" class="link-icon24 link-icon24-3">tweet</a></li>
+      <li><a target="_blank" href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));" class="link-icon24 link-icon24-4">share</a></li>
+    </ul>
+  </div>
+  <a href="#" class="image image-full"><img src="{{page.image}}" alt="" /></a>
+  <article class="post-content">
+    {{ content }}
+  </article>
+<article>

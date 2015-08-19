@@ -3,7 +3,7 @@ layout: default
 ---
 <!--The list of articles-->
 {% for post in paginator.posts %}
-<article class="is-post is-post-excerpt">
+<article class="post is-post is-post-excerpt">
     <header>
       <h2><a href="{{ post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
       <span class="byline">{{post.brief}}</span>
