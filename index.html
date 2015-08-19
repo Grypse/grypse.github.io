@@ -17,7 +17,7 @@ layout: default
         <li><a target="_blank" href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));" class="link-icon24 link-icon24-4">share</a></li>
       </ul>
     </div>
-    <a href="#" class="image image-full"><img src="{{post.image}}" alt="" /></a>
+    <a href="{{ post.url | prepend: site.baseurl}}" class="image image-full"><img src="{{post.image}}" alt="" /></a>
     <p>
       {{post.excerpt}}
     </p>
