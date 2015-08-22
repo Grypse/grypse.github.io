@@ -11,8 +11,7 @@ layout: default
   <div class="info">
     <span class="date"><span class="month">{{page.date | date: "%b"}}</span> <span class="day">{{page.date | date: "%-d"}}</span><span class="year">,{{post.date | date:",%Y"}} </span></span>
     <ul class="stats">
-      <li><a href="#" class="link-icon24 link-icon24-1">comment</a></li>
-      <li><a href="#" class="link-icon24 link-icon24-2">like</a></li>
+      <li><a href="#disque" class="link-icon24 link-icon24-1">comment</a></li>
       <li><a target="_blank" href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));" class="link-icon24 link-icon24-3">tweet</a></li>
       <li><a target="_blank" href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));" class="link-icon24 link-icon24-4">share</a></li>
     </ul>
@@ -21,4 +20,16 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = 'grypse';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
 <article>
