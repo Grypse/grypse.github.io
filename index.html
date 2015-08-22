@@ -5,7 +5,7 @@ layout: default
 {% for post in paginator.posts %}
 <article class="post is-post is-post-excerpt">
     <header>
-      <h2><a href="{{ post.url | prepend: site.baseurl}}#disqus_thread">{{post.title}}</a></h2>
+      <h2><a href="{{ post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
       <span class="byline">{{post.brief}}</span>
     </header>
       <div class="info">
