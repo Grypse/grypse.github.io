@@ -4,7 +4,7 @@ title:  "Use the highlighter for your Jekyll Project"
 date:   2015-08-19 16:01:01
 image:  "/images/4547.png"
 brief:  Introduce how to use the highlighter in your jekyll project
-categories: jekyll update
+categories: jekyll
 ---
 #Code snippet highlighting
 Jekyll has built in support for syntax highlighting of over 100 languages thanks to Pygments. To use Pygments, you must have Python installed on your system and set highlighter to pygments in your site's configuration file.
